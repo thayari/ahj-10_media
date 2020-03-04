@@ -1,0 +1,62 @@
+body {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Roboto, Verdana, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 700px;
+}
+
+.button {
+  background-color: #417AD0;
+  border-radius: 3px;
+  padding: 12px 18px;
+  color: #fff;
+  border: 0;
+  font-size: 100%;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.button:hover {
+  background-color: #619CF5;
+}
+
+.collapsible {
+  display: inherit;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  padding: 12px 18px;
+  max-width: 640px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsed {
+  display: none;
+}
+
+.post {
+  margin-top: 15px;
+}
+
+.coords {
+  font-size: 70%;
+  margin-top: 5px;
+}
+
+.input-block {
+  margin-top: 20px;
+}
