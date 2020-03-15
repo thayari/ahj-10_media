@@ -13,15 +13,31 @@
     <div class="input-block">
       <input type="text" name="" id="input-text">
     </div>
+    <div class="controls">
+      <button class="button round-button button-audio">🎤</button>
+      <button class="button round-button button-video">📹</button>
+      <div class="recording hidden">
+        <button class="button round-button button-recording-ok">✔️</button>
+        <div class="recording-timer">00:00</div>
+        <button class="button round-button button-recording-cancel">✖️</button>
+      </div>
+    </div>
   </div>
 
-  <div class="modal hidden">
-    К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте разрешение на использование геолокации, либо введите координаты вручную. <br>
-    Широта и долгота через запятую:
-    <div class="modal-input">
-      <input type="text" name="coords" id="input-coords">
-      <button class="button cancel">Отмена</button>
-      <button class="button ok">ОК</button>
+  <div class="modal modal-coords hidden">
+    <div class="modal-wrapper">
+      К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте разрешение на использование геолокации, либо введите координаты вручную. <br>
+      Широта и долгота через запятую:
+      <div class="modal-input">
+        <input type="text" name="coords" id="input-coords">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-error hidden">
+    <div class="modal-wrapper">
+      <p class="error-text"></p>
+      <button class="button cancel">OK</button>
     </div>
   </div>
 
